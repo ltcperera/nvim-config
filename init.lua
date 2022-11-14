@@ -4,4 +4,7 @@ else
     -- Ordinary Neovim
 end
 
+require("user.plugins-setup")
 require("user.core.options")
+require("user.core.colorscheme")
+
