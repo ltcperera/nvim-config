@@ -3,3 +3,5 @@ if vim.g.vscode then
 else
     -- Ordinary Neovim
 end
+
+require("user.core.options")
