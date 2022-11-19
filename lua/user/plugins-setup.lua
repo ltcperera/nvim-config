@@ -36,6 +36,13 @@ return packer.startup(function(use)
 
   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
-    -- file explorer
+  -- commenting with gc
+  use("numToStr/Comment.nvim")
+
+  -- file explorer
   use("nvim-tree/nvim-tree.lua")
+
+  -- LSP Configuration
+  use("neovim/nvim-lspconfig")
+
 end)    
