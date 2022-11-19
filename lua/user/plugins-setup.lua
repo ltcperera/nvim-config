@@ -42,6 +42,9 @@ return packer.startup(function(use)
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
 
+  -- statusline
+  use("nvim-lualine/lualine.nvim")
+
   -- LSP Configuration
   use("neovim/nvim-lspconfig")
 
