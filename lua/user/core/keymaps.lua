@@ -2,6 +2,7 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
+local api = require('Comment.api')
 
 -- General Keymaps
 keymap.set("i", "jk", "<ESC>") -- Use jk in insert mode to exit insert mode
@@ -17,6 +18,9 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
+
+-- Comment
+keymap.set("n", "<C-_>", api.toggle.linewise.current) -- comment line with Ctrl + /
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
