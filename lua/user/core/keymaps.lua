@@ -9,10 +9,13 @@ keymap.set("i", "jk", "<ESC>") -- Use jk in insert mode to exit insert mode
 
 keymap.set("n", "<F3>", ":nohl<CR>") -- Remove highlight
 
-keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
-keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width
-keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
+-- keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
+keymap.set("n", "<leader>\\", "<C-w>v") -- split window vertically
+-- keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
+keymap.set("n", "<leader>-", "<C-w>s") -- split window horizontally
+-- keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width
+keymap.set("n", "<leader>=", "<C-w>=") -- make split windows equal width
+keymap.set("n", "<leader>w", ":close<CR>") -- close current split window
 
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
