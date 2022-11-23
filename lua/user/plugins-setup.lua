@@ -54,8 +54,23 @@ return packer.startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   use ("moll/vim-bbye")
 
-  -- LSP Configuration
-  use("neovim/nvim-lspconfig")
+  -- Manage and setup LSP servers, linters and tools
+  use { 
+      "williamboman/mason.nvim", 
+      "williamboman/mason-lspconfig.nvim", 
+      "neovim/nvim-lspconfig",
+  } 
+ 
+  -- Formatting & Linting
+  use {
+      "jose-elias-alvarez/null-ls.nvim", -- Configure formatters and Linters
+      "jayp0521/mason-null-ls.nvim",     -- Bridge gap b/w/ mason & null-ls
+  }
+
+  -- additional functionality for typescript server (e.g. rename file & update imports)
+  use("jose-elias-alvarez/typescript.nvim") 
+  use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
+  use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
   -- fuzzy finding w/ telescope
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make"}) -- dependency for better sorting performance
