@@ -50,6 +50,10 @@ return packer.startup(function(use)
   -- statusline
   use("nvim-lualine/lualine.nvim")
 
+  -- Bufferline plugin emulates tabs in other editors
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use ("moll/vim-bbye")
+
   -- LSP Configuration
   use("neovim/nvim-lspconfig")
 
