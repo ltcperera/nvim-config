@@ -45,4 +45,4 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 
 -- Quit
-keymap.set("n", "<leader>q", ":q<CR>")
+keymap.set("n", "<leader>q", "<CMD>lua require('user.utils.functions').smart_quit()<CR>")
