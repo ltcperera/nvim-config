@@ -14,10 +14,11 @@ keymap.set("n", "<leader>-", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>=", "<C-w>=") -- make split windows equal width
 keymap.set("n", "<leader>w", ":close<CR>") -- close current split window
 
-keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
-keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
-keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
+-- Temporarily commenting the below settings since we are using BufferLine
+-- keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
+-- keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
+-- keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
+-- keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 
 -- Ctrl-s for saving
 keymap.set("n", "<C-s>", ":w<CR>") -- Save current file
@@ -46,3 +47,17 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 
 -- Quit
 keymap.set("n", "<leader>q", "<CMD>lua require('user.utils.functions').smart_quit()<CR>")
+
+-- Bufferline mappings
+keymap.set("n", "<A-,>", "<cmd>BufferLineCyclePrev<cr>")
+keymap.set("n", "<A-.>", "<cmd>BufferLineCycleNext<cr>")
+keymap.set("n", "<A-1>", "<cmd>lua require('bufferline').go_to_buffer(1, true)<cr>")
+keymap.set("n", "<A-2>", "<cmd>lua require('bufferline').go_to_buffer(2, true)<cr>")
+keymap.set("n", "<A-3>", "<cmd>lua require('bufferline').go_to_buffer(3, true)<cr>")
+keymap.set("n", "<A-4>", "<cmd>lua require('bufferline').go_to_buffer(4, true)<cr>")
+keymap.set("n", "<A-5>", "<cmd>lua require('bufferline').go_to_buffer(5, true)<cr>")
+keymap.set("n", "<A-6>", "<cmd>lua require('bufferline').go_to_buffer(6, true)<cr>")
+keymap.set("n", "<A-7>", "<cmd>lua require('bufferline').go_to_buffer(7, true)<cr>")
+keymap.set("n", "<A-8>", "<cmd>lua require('bufferline').go_to_buffer(8, true)<cr>")
+keymap.set("n", "<A-9>", "<cmd>lua require('bufferline').go_to_buffer(9, true)<cr>")
+
