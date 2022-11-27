@@ -12,7 +12,7 @@ keymap.set("n", "<F3>", ":nohl<CR>") -- Remove highlight
 keymap.set("n", "<leader>\\", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>-", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>=", "<C-w>=") -- make split windows equal width
-keymap.set("n", "<leader>w", ":close<CR>") -- close current split window
+keymap.set("n", "<leader>w", ":Bwipeout<CR>") -- close current split window
 
 -- Temporarily commenting the below settings since we are using BufferLine
 -- keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
