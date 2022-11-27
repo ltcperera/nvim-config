@@ -86,6 +86,9 @@ return packer.startup(function(use)
 	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp UIs
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
+    -- Add diffview for git diff
+    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
