@@ -56,13 +56,16 @@ return packer.startup(function(use)
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
 
+	-- Toggleterm
+	use("akinsho/toggleterm.nvim")
+
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
-    -- Autocomplete
-    use('hrsh7th/nvim-cmp')
-    use('hrsh7th/cmp-nvim-lsp')
+	-- Autocomplete
+	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-nvim-lsp")
 
 	-- Bufferline plugin emulates tabs in other editors
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
@@ -86,8 +89,8 @@ return packer.startup(function(use)
 	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp UIs
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
-    -- Add diffview for git diff
-    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+	-- Add diffview for git diff
+	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 
 	-- treesitter configuration
 	use({
