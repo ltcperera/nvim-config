@@ -63,10 +63,6 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
-	-- Autocomplete
-	use("hrsh7th/nvim-cmp")
-	use("hrsh7th/cmp-nvim-lsp")
-
 	-- Bufferline plugin emulates tabs in other editors
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 	use("moll/vim-bbye")
@@ -77,6 +73,17 @@ return packer.startup(function(use)
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 	})
+
+	-- Autocomplete
+	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+
+	-- Snippets
+	use("L3MON4D3/LuaSnip") -- Snippet engine
+	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
+	use("rafamadriz/friendly-snippets") -- useful snippets
 
 	-- Formatting & Linting
 	use({
