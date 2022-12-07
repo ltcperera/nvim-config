@@ -99,6 +99,9 @@ return packer.startup(function(use)
 	-- Add diffview for git diff
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 
+	-- Add bookmarks support
+	use("chentoast/marks.nvim")
+
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
