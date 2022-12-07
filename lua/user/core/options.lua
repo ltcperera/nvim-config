@@ -37,3 +37,6 @@ opt.splitbelow = true
 
 -- Consider hyphenated words as one word (e.g. hello-world)
 opt.iskeyword:append("-")
+
+-- Accommodate more than one mark in the sign column
+opt.signcolumn = "auto:2-5"
