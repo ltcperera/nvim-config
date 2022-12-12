@@ -102,6 +102,9 @@ return packer.startup(function(use)
 	-- Add bookmarks support
 	use("chentoast/marks.nvim")
 
+	-- Add vim-clang-format support
+	use("rhysd/vim-clang-format")
+
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",

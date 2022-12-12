@@ -47,6 +47,7 @@ end
 
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities = cmp_nvim_lsp.default_capabilities()
+capabilities.offsetEncoding = "utf-8"
 
 -- Change the Diagnostic symbols in the sign column (gutter)
 -- (not in youtube nvim video)
